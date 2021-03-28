@@ -1,0 +1,45 @@
+import random as rnd
+arr_num = "1234567890"
+arr_en ="abcdefghijklmnopqstvwxyz"
+arr_EN = "ABCDEFGHIJKLMNOPQSTVWXYZ"
+arr_symb = ";:*&^%$#@=+_-<>!?/"
+
+
+is_pincode = False
+is_letter = True
+is_symb = True
+
+pwd_length = 4
+arr_all = ""
+
+if is_pincode:
+    arr_all = arr_num
+elif is_letter:
+    arr_all = arr_en + arr_EN +arr_symb
+if is_letter:
+    arr_all += arr_num
+    def sample(arr,count):
+        pass
+        
+        
+arr_all = rnd.sample(arr_all, len(arr_all)-1)
+arr_pwd = rnd.sample(arr_all, pwd_length)
+
+
+
+print("".join(arr_pwd))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
